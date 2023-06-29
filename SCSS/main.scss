@@ -1,0 +1,56 @@
+$light-cyan: rgb(206, 227, 233);
+$neon-green: hsl(150, 100%, 66%);
+$grayish-blue: hsl(217, 19%, 38%);
+$dark-grayish-blue: hsl(217, 19%, 24%);
+$dark-blue: hsl(218, 23%, 16%);
+
+@mixin flexCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background: $dark-blue;
+}
+
+.Main {
+    @include flexCenter;
+    height: 100vh;
+}
+
+.Hero {
+    width: 30em;
+    height: 20em;
+    border-radius: 10px;
+    background: $dark-grayish-blue;
+    @include flexCenter;
+
+    .Hero > p {
+        color: $neon-green;
+    }
+
+    p {
+        color: $light-cyan;
+    }
+
+    h1 {
+      width: 13em;
+      text-align: center;  
+      color: $light-cyan;
+    }
+
+    button {
+       cursor: pointer;
+        border: none;
+        padding: 10px;
+        background: $neon-green;
+    }
+
+}
+
+.attribution {
+    color: $light-cyan;
+    text-align: center;
+}

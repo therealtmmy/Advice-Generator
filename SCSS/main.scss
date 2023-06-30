@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
 $light-cyan: rgb(206, 227, 233);
 $neon-green: hsl(150, 100%, 66%);
 $grayish-blue: hsl(217, 19%, 38%);
@@ -5,52 +7,71 @@ $dark-grayish-blue: hsl(217, 19%, 24%);
 $dark-blue: hsl(218, 23%, 16%);
 
 @mixin flexCenter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 }
 
 body {
-    background: $dark-blue;
+        background: $dark-blue;
 }
 
 .Main {
-    @include flexCenter;
-    height: 100vh;
+        @include flexCenter;
+        height: 100vh;
+
+    .attribution {
+        color: $light-cyan;
+        text-align: center;
+        font-size: 20px;
+    }
 }
 
 .Hero {
-    width: 30em;
-    height: 20em;
-    border-radius: 10px;
-    background: $dark-grayish-blue;
-    @include flexCenter;
+        width: 30em;
+        height: 23em;
+        border-radius: 10px;
+        background: $dark-grayish-blue;
+        @include flexCenter;
 
-    .Hero > p {
+    .Hero-Heading {
         color: $neon-green;
     }
 
     p {
         color: $light-cyan;
+        font-size: 17px;
+    }
+
+    h2 {
+        width: 13em;
+        font-size: 28px;
+        text-align: center;  
+        color: $light-cyan;
+        line-height: 35px;
+        padding-bottom: 10px;
+        font-family: 'Manrope', sans-serif;
     }
 
     h1 {
       width: 13em;
+      font-size: 28px;
       text-align: center;  
       color: $light-cyan;
+      line-height: 35px;
+      padding-bottom: 10px;
+      font-family: 'Manrope', sans-serif;
     }
 
     button {
-       cursor: pointer;
+        cursor: pointer;
         border: none;
         padding: 10px;
         background: $neon-green;
+        margin-top: 20px;
+        border-radius: 30em;
     }
 
 }
 
-.attribution {
-    color: $light-cyan;
-    text-align: center;
-}

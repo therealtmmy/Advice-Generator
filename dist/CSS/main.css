@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
 body {
   background: hsl(218, 23%, 16%);
 }
@@ -9,10 +10,15 @@ body {
   justify-content: center;
   height: 100vh;
 }
+.Main .attribution {
+  color: rgb(206, 227, 233);
+  text-align: center;
+  font-size: 20px;
+}
 
 .Hero {
   width: 30em;
-  height: 20em;
+  height: 23em;
   border-radius: 10px;
   background: hsl(217, 19%, 24%);
   display: flex;
@@ -20,25 +26,36 @@ body {
   align-items: center;
   justify-content: center;
 }
-.Hero .Hero > p {
+.Hero .Hero-Heading {
   color: hsl(150, 100%, 66%);
 }
 .Hero p {
   color: rgb(206, 227, 233);
+  font-size: 17px;
+}
+.Hero h2 {
+  width: 13em;
+  font-size: 28px;
+  text-align: center;
+  color: rgb(206, 227, 233);
+  line-height: 35px;
+  padding-bottom: 10px;
+  font-family: "Manrope", sans-serif;
 }
 .Hero h1 {
   width: 13em;
+  font-size: 28px;
   text-align: center;
   color: rgb(206, 227, 233);
+  line-height: 35px;
+  padding-bottom: 10px;
+  font-family: "Manrope", sans-serif;
 }
 .Hero button {
   cursor: pointer;
   border: none;
   padding: 10px;
   background: hsl(150, 100%, 66%);
-}
-
-.attribution {
-  color: rgb(206, 227, 233);
-  text-align: center;
+  margin-top: 20px;
+  border-radius: 30em;
 }/*# sourceMappingURL=main.css.map */

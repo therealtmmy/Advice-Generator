@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
 body {
-  background: hsl(218, 23%, 16%);
+  background: hsl(240, 100%, 0%);
 }
 
 .Main {
@@ -36,14 +36,14 @@ body {
   width: 60%;
   height: 80%;
   border-radius: 10px;
-  background: hsl(217, 19%, 24%);
+  background: hsl(210, 7%, 5%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .Hero .Hero-Heading {
-  color: hsl(150, 100%, 66%);
+  color: hsl(150, 97%, 46%);
   font-size: 1.5em;
 }
 .Hero p {
@@ -72,7 +72,7 @@ body {
   cursor: pointer;
   border: none;
   padding: 10px;
-  background: hsl(150, 100%, 66%);
+  background: hsl(150, 97%, 46%);
   margin-top: 20px;
   border-radius: 30em;
 }/*# sourceMappingURL=main.css.map */

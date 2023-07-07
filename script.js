@@ -10,19 +10,35 @@ const verse = document.getElementById("Verse");
 const bodyPage = document.querySelector("body");
 const hero = document.getElementById("card");
 const nightTime = document.getElementById("night");
-const dayTime = document.getElementById("day");
+// const dayTime = document.getElementById("day");
+
+let showOn = true;
 
 nightTime.addEventListener("click", () => {
-  bodyPage.style.setProperty("background", "hsl(232, 19%, 15%)");
-  hero.style.setProperty("background", "hsl(228, 28%, 20%)");
-  quote.style.setProperty("color", "hsl(0, 0%, 100%)");
+  if (showOn) {
+    bodyPage.style.setProperty("background", "hsl(232, 19%, 15%)");
+    hero.style.setProperty("background", "hsl(228, 28%, 20%)");
+    quote.style.setProperty("color", "hsl(0, 0%, 100%)");
+    nightTime.style.setProperty("background", "hsl(228, 28%, 20%)");
+    nightTime.style.setProperty("color", "white");
+    nightTime.innerText = "Day";
+    showOn = !showOn;
+  } else {
+    bodyPage.style.setProperty("background", "white");
+    hero.style.setProperty("background", "hsl(227, 47%, 96%)");
+    quote.style.setProperty("color", "hsl(230, 17%, 14%)");
+    nightTime.innerText = "Night";
+    nightTime.style.setProperty("background", "hsl(227, 47%, 96%)");
+    nightTime.style.setProperty("color", "black");
+    showOn = !showOn;
+  }
 });
 
-dayTime.addEventListener("click", () => {
-  bodyPage.style.setProperty("background", "white");
-  hero.style.setProperty("background", "hsl(227, 47%, 96%)");
-  quote.style.setProperty("color", "hsl(230, 17%, 14%)");
-});
+// dayTime.addEventListener("click", () => {
+//   bodyPage.style.setProperty("background", "white");
+//   hero.style.setProperty("background", "hsl(227, 47%, 96%)");
+//   quote.style.setProperty("color", "hsl(230, 17%, 14%)");
+// });
 
 // Fetch API
 button.addEventListener("click", () => {

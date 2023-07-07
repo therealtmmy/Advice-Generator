@@ -46,21 +46,11 @@ body {
         .night {
             @include flexRow;
             @include inputButton;
-           
-        }
-
-        .day {
-            @include flexRow;
-            @include inputButton;
-        }
-
-        input {
-            width: 20px;
-            height: 20px;
+            width: 7em;
+            color: white;
             cursor: pointer;
-            border-radius: 50px;
-            outline: none;
         }
+
 }
 
 .Main {
@@ -98,15 +88,6 @@ body {
         font-size: 17px;
     }
 
-    h2 {
-        width: 13em;
-        font-size: 28px;
-        text-align: center;  
-        color: $light-cyan;
-        line-height: 35px;
-        padding-bottom: 10px;
-        font-family: 'Manrope', sans-serif;
-    }
 
     h1 {
       width: 13em;
@@ -128,4 +109,25 @@ body {
     }
 
 }
+
+
+@media screen and (max-width: 600px) { 
+
+ .Hero {
+        width: 100%;
+        height: 100%;
+
+        .Hero-Heading {
+            font-size: 1em;
+        }
+    
+        h1 {
+            width: 15em;
+            font-size: 20px;
+          }
+          
+       g {
+            display: none
+        }
+    }};
 

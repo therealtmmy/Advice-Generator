@@ -28,6 +28,11 @@ body .night {
   justify-content: center;
   height: 100vh;
 }
+.Main .count {
+  font-size: 1.1em;
+  font-family: "Inter", sans-serif;
+  margin-top: 2em;
+}
 .Main .attribution {
   color: hsl(0, 0%, 100%);
   text-align: center;
@@ -76,18 +81,40 @@ body .night {
 }
 
 @media screen and (max-width: 600px) {
+  .Main .count {
+    font-size: 1.1em;
+    font-family: "Inter", sans-serif;
+    margin-top: 2em;
+  }
+  .count {
+    font-size: 10px;
+  }
   .Hero {
     width: 100%;
     height: 100%;
+    border: 1px solid red;
   }
   .Hero .Hero-Heading {
-    font-size: 1em;
+    font-size: 1.3em;
   }
   .Hero h1 {
     width: 15em;
     font-size: 20px;
   }
+  .Hero svg {
+    display: none;
+  }
   .Hero g {
     display: none;
+  }
+  .Hero button {
+    cursor: pointer;
+    border: none;
+    padding: 1em;
+    width: 4em;
+    height: 4em;
+  }
+  .Hero button svg {
+    display: block;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -12,6 +12,20 @@ const hero = document.getElementById("card");
 const nightTime = document.getElementById("night");
 // const dayTime = document.getElementById("day");
 
+// Tracking of web visitation
+const visit = document.getElementById("website-counter");
+let visitCount = localStorage.getItem("page_view");
+// Check if page_view entry is present
+if (visitCount) {
+  visitCount = Number(visitCount) + 1;
+  localStorage.setItem("page_view", visitCount);
+} else {
+  visitCount = 1;
+  localStorage.setItem("page_view", 1);
+}
+
+visit.innerText = visitCount;
+
 let showOn = true;
 
 nightTime.addEventListener("click", () => {

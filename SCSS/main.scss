@@ -57,6 +57,12 @@ body {
         @include flexCenter;
         height: 100vh;
 
+        .count {
+            font-size: 1.1em;
+            font-family: "Inter", sans-serif;
+            margin-top: 2em;
+        }
+
 
     .attribution {
         color: $light-cyan;
@@ -113,12 +119,28 @@ body {
 
 @media screen and (max-width: 600px) { 
 
+    // body {
+    //     overflow-x: hidden;
+        .Main {
+            .count {
+                font-size: 1.1em;
+                font-family: "Inter", sans-serif;
+                margin-top: 2em;
+            }
+        }
+
+ .count {
+    font-size: 10px;
+ }
+
  .Hero {
+        
         width: 100%;
         height: 100%;
+        border: 1px solid red;
 
         .Hero-Heading {
-            font-size: 1em;
+            font-size: 1.3em;
         }
     
         h1 {
@@ -126,8 +148,24 @@ body {
             font-size: 20px;
           }
           
+          svg {
+            display: none;
+          }
+
        g {
             display: none
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            padding: 1em;
+            width: 4em;
+            height: 4em;
+
+            svg {
+                display: block;
+            }
         }
     }};
 

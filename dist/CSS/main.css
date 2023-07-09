@@ -92,7 +92,7 @@ body .night {
   .Hero {
     width: 100%;
     height: 100%;
-    border: 1px solid red;
+    margin-top: 2em;
   }
   .Hero .Hero-Heading {
     font-size: 1.3em;
